@@ -1,0 +1,204 @@
+body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #301102 0%, #000000 100%);
+            color: #333;
+        }
+        header {
+            background: linear-gradient(90deg, #5f180a 0%, #2b0f08 100%);
+            color: #ffe4e4;
+            padding: 2rem 0 1rem 0;
+            text-align: center;
+            font-family: 'Pacifico', cursive;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            padding: 2rem 1rem;
+        }
+        .pizza-img {
+            width: 300px;
+            border-radius: 20px;
+            box-shadow: 0 8px 24px rgba(255,81,47,0.15);
+            transition: transform 0.2s;
+        }
+        .pizza-img:hover {
+            transform: scale(1.05);
+        }
+        h2 {
+            text-align: center;
+            margin-top: 2rem;
+            font-family: 'Pacifico', cursive;
+            color: #dd5824;
+            font-size: 2rem;
+        }
+        .reviews {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            padding: 2rem 1rem;
+        }
+        .review-card {
+            background: linear-gradient(120deg, #6b5449 0%, #703a15 100%);
+            cursor: pointer;
+            border-radius: 16px;
+            box-shadow: 0 4px 16px rgb(102, 32, 0);
+            padding: 1.5rem;
+            width: 320px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: box-shadow 0.2s;
+        }
+        .review-card:hover {
+            box-shadow: 0 8px 32px rgba(221,36,118,0.18);
+        }
+        .user-img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #ff512f;
+            margin-bottom: 1rem;
+        }
+        .username {
+            font-weight: bold;
+            color: #ff512f;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+        .stars {
+            color: #ffd700;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+        .comment {
+            font-style: italic;
+            color: #d3d3d3;
+            text-align: center;
+        }
+        .about-section, .gallery2, .specials-section {
+            padding: 2rem 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .about-content {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 2rem;
+            justify-content: center;
+        }
+        .about-img {
+            width: 350px;
+            border-radius: 20px;
+            box-shadow: 0 8px 24px rgba(255,81,47,0.15);
+        }
+        .about-text {
+            max-width: 500px;
+            font-size: 1.2rem;
+            color: #dadada;
+            background: rgba(139, 119, 119, 0.7);
+            padding: 1.5rem;
+            border-radius: 16px;
+        }
+        .gallery2 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+        }
+        .gallery2-img {
+            width: 350px;
+            border-radius: 20px;
+            box-shadow: 0 8px 24px rgba(221,36,118,0.10);
+            transition: transform 0.2s;
+        }
+        .gallery2-img:hover {
+            transform: scale(1.05);
+        }
+        .specials-section {
+            background: linear-gradient(120deg, #140801 0%, #000000 100%);
+            border-radius: 20px;
+            margin-bottom: 2rem;
+        }
+        .specials-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+        .special-card {
+            background: #cfb297;
+            border-radius: 16px;
+            box-shadow: 0 4px 16px rgba(255,81,47,0.10);
+            padding: 1.2rem;
+            width: 270px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .special-img {
+            width: 120px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+            box-shadow: 0 4px 16px rgba(221,36,118,0.10);
+        }
+        .special-title {
+            font-family: 'Pacifico', cursive;
+            color: #4b332a;
+            font-size: 1.6rem;
+            margin-bottom: 0.5rem;
+        }
+        .special-desc {
+            color: #444;
+            text-align: center;
+            font-size: 1rem;
+        }
+        footer {
+            background: linear-gradient(90deg, #645245 0%, #63544a 100%);
+            color: #fff;
+            text-align: center;
+            padding: 2rem 1rem 1rem 1rem;
+            font-size: 1.1rem;
+            font-family: 'Roboto', sans-serif;
+            letter-spacing: 1px;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+            margin-top: 3rem;
+            box-shadow: 0 -4px 16px rgba(221,36,118,0.10);
+        }
+        .footer-social {
+            margin: 1rem 0 0.5rem 0;
+        }
+        .footer-social a {
+            display: inline-block;
+            margin: 0 0.5rem;
+            color: #fff;
+            font-size: 1.5rem;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .footer-social a:hover {
+            color: #ffd700;
+        }
+        @media (max-width: 700px) {
+            .gallery, .reviews, .gallery2, .specials-list, .about-content {
+                flex-direction: column;
+                align-items: center;
+            }
+            .pizza-img, .review-card, .gallery2-img, .about-img {
+                width: 90vw;
+                max-width: 350px;
+            }
+            .about-text {
+                max-width: 95vw;
+            }
+        }
